@@ -19,15 +19,17 @@
             </center>
             <div class="main">
                 <div class="item">
-                    {{#each data}}
-                    <li><img src="{{picture}}" width="150" height="100" />
-                    </li>
-                    <li>Name: {{name}}</li>
-                    <li>Price: {{price}}</li>
-                    <li>Brand: {{brand}}</li>
-                    <li><a href="/delete?id={{_id}}">Delete</a>
-                        <a href="/edit?id={{_id}}">Edit</a>
-                    </li>
+                    <ul>
+                        {{#each data}}
+                        <li><img src="{{picture}}" width="150" height="100" />
+                        </li>
+                        <li>Name: {{name}}</li>
+                        <li>Price: {{price}}</li>
+                        <li>Brand: {{brand}}</li>
+                        <li><a href="/delete?id={{_id}}">Delete</a>
+                            <a href="/edit?id={{_id}}">Edit</a>
+                        </li>
+                    </ul>
                 </div>
                 {{/each}}
             </div>
