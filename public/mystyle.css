@@ -1,6 +1,10 @@
 body{
     background-image: url("https://d3.violet.vn/uploads/previews/document/1/61/914/nenwebtrang.jpg.jpg");
 }
+
+.option{
+    padding-bottom: 30px;
+}
 .option a{
     text-decoration: none;
     padding: 5px 5px;
