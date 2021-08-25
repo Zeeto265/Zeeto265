@@ -1,5 +1,5 @@
 const {ObjectId,MongoClient} = require('mongodb');
-const url = 'mongodb+srv://asm2-1644:<password>@cluster0.vqr6y.mongodb.net/test';
+const url = 'mongodb+srv://asm2-1644:nam2652001@cluster0.vqr6y.mongodb.net/test';
 
 async function getDB() {
     const client = await MongoClient.connect(url);
