@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index</title>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+
+    <body>
+        <div class="background">
+            <center>
+                <header>
+                    <h1>LaptopZE</h1>
+                </header>
+                <div class="option"><a href="/insert">Insert Product</a></div>
+            </center>
+            <div class="main">
+                <div class="item">
+                    {{#each data}}
+                    <li><img src="{{picture}}" width="150" height="100" />
+                    </li>
+                    <li>Name: {{name}}</li>
+                    <li>Price: {{price}}</li>
+                    <li>Brand: {{brand}}</li>
+                    <li><a href="/delete?id={{_id}}">Delete</a>
+                        <a href="/edit?id={{_id}}">Edit</a>
+                    </li>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        <div class="footer">
+            Copyright by LaptopZE - 2021
+        </div>
+
+
+    </body>
+
+</html>

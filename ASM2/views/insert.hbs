@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Insert product</title>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+
+    <body>
+        <center>
+            <div class="home"><a href="/">Homepage</a></div>
+            <form action="/insertProduct" method="post" style="width:fit-content">
+            <fieldset>
+                <legend>Insert product</legend>
+                Name <input type="text" name="txtName">
+                <span>{{errorMsg}}</span>
+                <br>
+                Price <input type="text" name="txtPrice">
+                <br>
+                Brand <input type="text" name="txtBrand">
+                <br>
+                Picture <input type="text" name="txtPicture">
+                <br>
+                <input type="submit" value="Insert Product">
+                </fieldset>
+            </form>
+        </center>
+        </form>
+
+    </body>
+
+</html>

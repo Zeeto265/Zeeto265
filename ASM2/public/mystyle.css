@@ -1,0 +1,29 @@
+body{
+    background-image: url("https://d3.violet.vn/uploads/previews/document/1/61/914/nenwebtrang.jpg.jpg");
+}
+.option a{
+    text-decoration: none;
+    padding: 5px 5px;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #ff5200;
+    color: black;
+}
+.option a:hover{
+    background-color: white;
+  }
+li {
+    font: normal 100% 'century gothic', arial, sans-serif;
+    text-align: center;
+    list-style: none;
+}
+.footer{
+    text-align: center;
+    padding-top: 15px   ;
+}
+li a{
+    font: normal 100% 'century gothic', arial, sans-serif;
+            text-transform: uppercase;
+            display: inline-block;
+            text-align: center;
+}
