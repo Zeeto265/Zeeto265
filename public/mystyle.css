@@ -20,6 +20,7 @@ li {
     font: normal 100% 'century gothic', arial, sans-serif;
     text-align: center;
     list-style: none;
+    display: inline;
 }
 .footer{
     text-align: center;
