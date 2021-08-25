@@ -42,10 +42,10 @@ app.post('/insertProduct',async(req,res)=>{
     const brandInput = req.body.txtBrand;
     const pictureInput = req.body.txtPicture;
     
-    var error = {}
+    var err = {}
     var isError = false;
     if(nameInput == null || nameInput.length <5){
-        error.name = "Length name must >=5 world!"
+        err.name = "Length name must >=5 world!"
         isError = true;
     }
     if(isError){
