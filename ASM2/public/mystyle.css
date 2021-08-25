@@ -6,7 +6,7 @@ body{
     padding: 5px 5px;
     font-weight: bold;
     font-size: 25px;
-    background-color: #ff5200;
+    background-color: tan;
     color: black;
 }
 .option a:hover{
@@ -19,11 +19,14 @@ li {
 }
 .footer{
     text-align: center;
-    padding-top: 15px   ;
+    padding-top: 50px;
 }
 li a{
     font: normal 100% 'century gothic', arial, sans-serif;
             text-transform: uppercase;
             display: inline-block;
             text-align: center;
+}
+fieldset{
+    width: fit-content;
 }
