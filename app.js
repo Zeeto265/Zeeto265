@@ -49,7 +49,7 @@ app.post('/insertProduct',async(req,res)=>{
         isError = true;
     }
     if(isError){
-        res.render('insert','edit',{error: err})
+        res.render('insert',{error: err})
     }
     if(!isError){
         const newProduct = {name:nameInput,price:priceInput,brand:brandInput,picture:pictureInput};
