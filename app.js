@@ -48,18 +48,14 @@ app.post('/insertProduct',async(req,res)=>{
         err.name = "Length name must >=5 world!"
         isError = true;
     }
-    if(isNaN(priceInput) || priceInput == null){
-        err.price = "Price must be number!"
-        isError = true;
-    }
-    if(isError){
+    else if(isError){
         res.render('insert',{error: err})
     }
-    if(!isError){
+    else if(!isError){
         const newProduct = {name:nameInput,price:priceInput,brand:brandInput,picture:pictureInput};
         insertProduct(newProduct)
         res.redirect("/");
-    }     
+    }
 })
 
 app.get('/delete', async (req, res) => {

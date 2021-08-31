@@ -29,4 +29,4 @@ async function deleteProduct(id) {
     const dbo = await getDB();
     await dbo.collection("sproduct").deleteOne({ "_id": ObjectId(id) });
 }
-module.exports = {getDB,insertProduct,updateProduct,getProductById,deleteProduct}
+module.exports = {getDB,insertProduct,updateProduct,getProductById,deleteProduct, alertName, alertPrice}
