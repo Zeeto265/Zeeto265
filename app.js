@@ -48,10 +48,14 @@ app.post('/insertProduct',async(req,res)=>{
         err.name = "Length name must >=5 world!"
         isError = true;
     }
-    else if(isError){
+     if(priceInput.slice(-1) != '$'){
+         err.price = "Wrong currency unit"
+         isError = true;
+    }
+    if(isError){
         res.render('insert',{error: err})
     }
-    else if(!isError){
+    if(!isError){
         const newProduct = {name:nameInput,price:priceInput,brand:brandInput,picture:pictureInput};
         insertProduct(newProduct)
         res.redirect("/");
